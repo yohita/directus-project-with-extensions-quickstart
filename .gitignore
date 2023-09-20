@@ -22,10 +22,8 @@ npm-debug.log*
 /.versions
 /.vscode
 /coverage
-/dist
 /node_modules
 node_modules
-dist
 /platforms
 /plugins
 /www
@@ -38,3 +36,9 @@ public/uploads
 /bo/vendor
 composer.lock
 vendor
+
+# Ignore dist folder in all directories
+/dist/
+
+# Allow dist folder in extensions and its subdirectories
+!/extensions/**/dist/

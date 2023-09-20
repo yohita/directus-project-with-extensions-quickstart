@@ -1,0 +1,1 @@
+const e=[{name:"my-hooks",config:({filter:e,action:o})=>{e("items.create",(()=>{console.log("Creating Item!")})),o("items.create",(()=>{console.log("Item created!")}))}}],o=[{name:"my-api",config:e=>{e.get("/",((e,o)=>o.send("Hello, World!")))}}],t=[];export{o as endpoints,e as hooks,t as operations};
