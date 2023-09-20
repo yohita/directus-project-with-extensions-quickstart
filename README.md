@@ -8,8 +8,6 @@
 - [Getting Started](#getting-started)
 - [Extension Development](#extension-development)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About Directus
 
