@@ -1,0 +1,1 @@
+# directus-project-with-extensions-quickstart
