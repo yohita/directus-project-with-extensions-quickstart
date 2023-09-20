@@ -11,12 +11,21 @@ destination_directory="$script_directory/extensions"
 
 # Loop through each subdirectory in the parent directory
 for directory in $parent_directory/*; do
-    # Get the name of the subdirectory
-    directory_name=${directory##*/}
+
+    # Go to Directory
+    cd $directory
+    echo  $directory;
+    
+    #check if node_modules exists, if not run npm i
+    if [ ! -d "$directory/node_modules" ]; then
+      npm i
+    fi
 
     # Build the extension
-    cd $directory
     npm run build
+
+    # Get the name of the subdirectory
+    directory_name=${directory##*/}
 
     # Target Directory name with directus-extension prefix
     directory_name="directus-extension-$directory_name"
