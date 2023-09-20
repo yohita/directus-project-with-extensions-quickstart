@@ -1,0 +1,13 @@
+{
+  "name": "directus-project-with-extensions-quickstart",
+  "description": "Directus project with extensions quickstart",
+  "author": {
+    "name": "Amit Kulkarni",
+    "url": "https://amit.vc"
+  },
+	"version": "1.0.0",
+  "dependencies": {
+    "directus": "^10.6.2",
+    "sqlite3": "^5.1.6"
+  }
+}
