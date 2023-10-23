@@ -27,6 +27,8 @@ git clone https://github.com/Yohita/directus-project-with-extensions-quickstart.
 cd directus-project-with-extensions-quickstart
 npm install
 
+3. Change patth to data.db in .env file to your file path
+
 3. **Start the Development Server**: Start the development server to begin working with Directus:
 bash script-quickstart.sh
 
@@ -35,6 +37,11 @@ OR
 node index.cjs
 
 **Thats it !**
+- Server is running on http://localhost:8055
+- my-api on :  http://localhost:8055/my-api
+- api raw database access : http://localhost:8055/my-api/product-list-raw-dbaccess-test
+- api data access using directus item service : http://localhost:8055/my-api/product-list-item-service-api-test
+
 
 **Development Mode build and run** : script-quickstart.sh to prepare project and run , do this when we do any changes in extension souce
 bash script-quickstart.sh
@@ -50,6 +57,7 @@ bash script-quickstart.sh
 ## Usage
 
 You can use this Directus project as a foundation for building various content-driven applications. Customize your content models, create data relationships, and extend Directus to suit your specific project requirements.
+
 
 For detailed information on how to use Directus, refer to the official [Directus Documentation](https://docs.directus.io/).
 
