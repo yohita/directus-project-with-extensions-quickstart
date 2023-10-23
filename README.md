@@ -75,7 +75,7 @@ This project includes the tools and structure for developing extensions for Dire
 5. **Test Your Extension**: 
    Run "bash script-quickstart.sh" to build , move and start project with your extension
 
-## Deployment**: 
+## Deployment** 
 Treat this project as just another Node.js project and follow standard deployment procedures. No special actions are needed; simply update your database configuration accordingly in the .env file.
 
 I suggest using Plesk Obsidian as the server control panel with the Node.js extension for deploying this project. This setup will allow you to establish DevOps processes with ease, ensuring that your server gets updated with each code push. Furthermore, a DigitalOcean droplet with a minimum of 2 GB of RAM should be sufficient to run both MySQL and the Node.js project for moderately heavy traffic. You can utilize the free Plesk Obsidian one-click install available on the DigitalOcean Marketplace.
