@@ -52,7 +52,13 @@ bash script-quickstart.sh
    Password : admin123
 2. This project uses SQLite for quickstart, but you can connect to any other database simply by configuring the .env file.
 
+## Using Mysql Instead of SQLITe : 
+Run command : 'npx directus init'
+This will create .env with your mysql credentials
 
+## Using PHP
+I work on both NodeJS scripts as well as PHP in my project , 
+I have added little helper to help you with that in php folder
 
 ## Usage
 
