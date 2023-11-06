@@ -56,9 +56,11 @@ bash script-quickstart.sh
 Run command : 'npx directus init'
 This will create .env with your mysql credentials
 
-## Using PHP
+## Using PHP php-bo  (PHP BackOffice)
 I work on both NodeJS scripts as well as PHP in my project , 
 I have added little helper to help you with that in php folder
+It Parses and use .env file of root directory
+Only Supports MySql as of now.
 
 ## Usage
 
