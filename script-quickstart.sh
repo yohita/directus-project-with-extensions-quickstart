@@ -3,6 +3,11 @@
 # Get the directory where this script is located
 script_directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+#run npm i if node_modules does not exist
+if [ ! -d "$script_directory/node_modules" ]; then
+  npm i
+fi
+
 # Parent directory where your subdirectories are located
 parent_directory="$script_directory/src-extensions"
 
