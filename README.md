@@ -42,6 +42,14 @@ node index.cjs
 - api raw database access : http://localhost:8055/my-api/product-list-raw-dbaccess-test
 - api data access using directus item service : http://localhost:8055/my-api/product-list-item-service-api-test
 
+## Applying a Template to Blank Instance
+2. Login and create a Static Access Token for the admin user.
+3. Copy the static token and your Directus URL. (http://localhost:8055)
+4. Run the following command on the terminal and follow the prompts.
+
+```
+$ npx directus-template-cli@latest apply
+```
 
 **Development Mode build and run** : script-quickstart.sh to prepare project and run , do this when we do any changes in extension souce
 bash script-quickstart.sh
