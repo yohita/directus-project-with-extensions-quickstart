@@ -55,7 +55,7 @@ if [ ! -f "$script_directory/.env" ]; then
   cp $script_directory/.env-sample $script_directory/.env 
 
   # Define the new value for DB_FILENAME
-  new_db_filename="$script_directory/data.db"
+  new_db_filename="$script_directory/data_agencyos.db"
 
   # Escape the special characters in the new value
   escaped_db_filename=$(echo "$new_db_filename" | sed 's/[\/&]/\\&/g')
