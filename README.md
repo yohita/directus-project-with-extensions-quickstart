@@ -13,6 +13,7 @@
 
 [Directus](https://directus.io/) is an open-source headless CMS that provides a powerful and flexible interface for managing your content and databases. It allows you to create, customize, and manage your content models and data with ease, making it a great choice for building content-driven applications - supercharged with APIs.
 
+[![Youtube Video](https://img.youtube.com/vi/q6WGvEZvPrE/0.jpg)](https://www.youtube.com/watch?v=q6WGvEZvPrE)
 
 ## Getting Started
 
