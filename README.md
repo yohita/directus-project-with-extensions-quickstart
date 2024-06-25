@@ -82,6 +82,8 @@ For detailed information on how to use Directus, refer to the official [Directus
 
 This project includes the tools and structure for developing extensions for Directus. You can find extension development resources and examples in the src-extensions directory. To get started with extension development, follow these steps:
 
+[![Youtube Video](https://img.youtube.com/vi/dY96SwsR_3Y/0.jpg)](https://www.youtube.com/watch?v=dY96SwsR_3Y)
+
 1. **Create an Extension**: Inside the `src-extensions/my-bundle` directory.
   1. Install "npm i" 
   2. Start with "npm run add"
@@ -91,9 +93,12 @@ This project includes the tools and structure for developing extensions for Dire
 
 5. **Test Your Extension**: 
    Run "bash script-quickstart.sh" to build , move and start project with your extension
+   
 
-## Deployment** 
-Treat this project as just another Node.js project and follow standard deployment procedures. No special actions are needed; simply update your database configuration accordingly in the .env file.
+## Deployment
+Treat this project as just another Node.js project and follow standard deployment procedures. No special actions are needed.
+Simply update your database configuration accordingly in the .env file.
+
 VPS with a minimum of 2 GB of RAM should be sufficient to run both MySQL and the Node.js project for moderately heavy traffic. 
 
 [![Youtube Video](https://img.youtube.com/vi/HqSYPM6gX0o/0.jpg)](https://www.youtube.com/watch?v=HqSYPM6gX0o)
