@@ -85,7 +85,7 @@ This project includes the tools and structure for developing extensions for Dire
 1. **Create an Extension**: Inside the `src-extensions/my-bundle` directory.
   1. Install "npm i" 
   2. Start with "npm run add"
-    Follow Documentation Here [Directus Bundle Extension](https://docs.directus.io/extensions/bundles.html)
+    Follow Official Documentation Here [Directus Bundle Extension](https://docs.directus.io/extensions/bundles.html)
 
 4. **Develop Your Extension**: Add your custom code and logic to your extension directory. You can use the provided examples as a reference.
 
@@ -94,5 +94,6 @@ This project includes the tools and structure for developing extensions for Dire
 
 ## Deployment** 
 Treat this project as just another Node.js project and follow standard deployment procedures. No special actions are needed; simply update your database configuration accordingly in the .env file.
+VPS with a minimum of 2 GB of RAM should be sufficient to run both MySQL and the Node.js project for moderately heavy traffic. 
 
-I suggest using Plesk Obsidian as the server control panel with the Node.js extension for deploying this project. This setup will allow you to establish DevOps processes with ease, ensuring that your server gets updated with each code push. Furthermore, a DigitalOcean droplet with a minimum of 2 GB of RAM should be sufficient to run both MySQL and the Node.js project for moderately heavy traffic. You can utilize the free Plesk Obsidian one-click install available on the DigitalOcean Marketplace.
+[![Youtube Video](https://img.youtube.com/vi/HqSYPM6gX0o/0.jpg)](https://www.youtube.com/watch?v=HqSYPM6gX0o)
