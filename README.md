@@ -13,6 +13,8 @@
 
 [Directus](https://directus.io/) is an open-source headless CMS that provides a powerful and flexible interface for managing your content and databases. It allows you to create, customize, and manage your content models and data with ease, making it a great choice for building content-driven applications - supercharged with APIs.
 
+**Check Below Video from YouTube :**
+
 [![Youtube Video](https://img.youtube.com/vi/q6WGvEZvPrE/0.jpg)](https://www.youtube.com/watch?v=q6WGvEZvPrE)
 
 ## Getting Started
@@ -82,6 +84,8 @@ For detailed information on how to use Directus, refer to the official [Directus
 
 This project includes the tools and structure for developing extensions for Directus. You can find extension development resources and examples in the src-extensions directory. To get started with extension development, follow these steps:
 
+**Check Below Video from YouTube :**
+
 [![Youtube Video](https://img.youtube.com/vi/dY96SwsR_3Y/0.jpg)](https://www.youtube.com/watch?v=dY96SwsR_3Y)
 
 1. **Create an Extension**: Inside the `src-extensions/my-bundle` directory.
@@ -100,5 +104,7 @@ Treat this project as just another Node.js project and follow standard deploymen
 Simply update your database configuration accordingly in the .env file.
 
 VPS with a minimum of 2 GB of RAM should be sufficient to run both MySQL and the Node.js project for moderately heavy traffic. 
+
+**Check Below Video from YouTube :**
 
 [![Youtube Video](https://img.youtube.com/vi/HqSYPM6gX0o/0.jpg)](https://www.youtube.com/watch?v=HqSYPM6gX0o)
