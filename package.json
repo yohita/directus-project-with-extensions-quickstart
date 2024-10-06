@@ -5,9 +5,9 @@
     "name": "Amit Kulkarni",
     "url": "https://amit.vc"
   },
-	"version": "11.0.2",
+	"version": "11.1.0",
   "dependencies": {
-    "directus": "11.0.2",
+    "directus": "11.1.0",
     "sqlite3": "^5.1.6"
   }
 }
