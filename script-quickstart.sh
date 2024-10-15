@@ -71,6 +71,7 @@ if [ -d "$script_directory/src-angular-ionic" ]; then
   cd $script_directory/src-angular-ionic
   if [ -d "$script_directory/src-angular-ionic/my-app" ]; then
     cd $script_directory/src-angular-ionic/my-app
+    npm i 
     ionic build
     cp -r $script_directory/src-angular-ionic/my-app/www $script_directory/angular-ionic-dist
   fi
