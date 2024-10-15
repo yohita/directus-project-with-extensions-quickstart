@@ -64,12 +64,25 @@ if [ ! -f "$script_directory/.env" ]; then
   sed -i.bak "s|^\(DB_FILENAME=\)\".*\"$|\1\"$new_db_filename\"|" "$script_directory/.env" && rm "$script_directory/.env.bak"
 
 fi
-  
+
+
+#Check if src-angular-ionic folder exists if is ig cd to it and then to check if my-app exist then cd to it , run ionic build copy content from my-app/dist to /angular-ionic-dist
+if [ -d "$script_directory/src-angular-ionic" ]; then
+  cd $script_directory/src-angular-ionic
+  if [ -d "$script_directory/src-angular-ionic/my-app" ]; then
+    cd $script_directory/src-angular-ionic/my-app
+    ionic build
+    cp -r $script_directory/src-angular-ionic/my-app/www $script_directory/angular-ionic-dist
+  fi
+fi
+
 
 #cd to script_directory
 cd $script_directory
 
 # Run the index.cjs file to start the server
 node index.cjs
+
+
 
 

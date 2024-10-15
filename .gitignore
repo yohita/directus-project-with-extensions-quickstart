@@ -42,3 +42,5 @@ vendor
 
 # Allow dist folder in extensions and its subdirectories
 !/extensions/**/dist/
+
+angular-ionic-dist/www

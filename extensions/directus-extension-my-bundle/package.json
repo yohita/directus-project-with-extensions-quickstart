@@ -1,7 +1,6 @@
 {
 	"name": "directus-extension-my-bundle",
-	"version": "1.0.0",
-	"type": "module",
+	"version": "1.0.0", 
 	"directus:extension": {
 		"host": "^10.1.10",
 		"type": "bundle",
