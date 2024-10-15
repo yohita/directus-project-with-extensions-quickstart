@@ -43,7 +43,14 @@ export class ApiService {
 
     }
     catch (error:any) {
-      location.href = '/admin/login';
+       localStorage.removeItem('currentUser');
+      if (window.top && window.top !== window.self) {
+        // Code is running inside an iframe
+        window.top.location.href = '/admin/login?redirect=custom-app';
+      } else {
+        // Code is running in the main window
+        window.location.href = '/admin/login?redirect=custom-app';
+      }
        //this.present_toast('error','Error',error.error.message);
        //location.href = '/admin/login';
     }

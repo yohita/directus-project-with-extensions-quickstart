@@ -22,7 +22,9 @@ export class AppComponent implements OnInit {
   }
 
   checkIfLoggedIn() {
+    setTimeout(()=>{                           // <<<---using ()=> syntax
     this.apiService.getSetCurrentUser();     
+    },400);
   }
 
 }
