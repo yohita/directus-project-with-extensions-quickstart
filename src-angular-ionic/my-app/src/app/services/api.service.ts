@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ToastController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
@@ -11,7 +11,7 @@ export class ApiService {
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
   
-  constructor( private http: HttpClient, public toastController: ToastController) {
+  constructor( private http: HttpClient, public toastController: ToastController , public alertController: AlertController) {
     this.currentUserSubject = new BehaviorSubject<any>(
       JSON.parse(localStorage.getItem('currentUser')!)
     );
@@ -98,5 +98,36 @@ export class ApiService {
   public get currentUserValue(): any {
     return this.currentUserSubject.value;
   }
+
+  async presentAlertConfirm(header:any,message:any,ok:any='OK',cancel:any='Cancel') {
+    //create alert controller and return yes for true and false for no
+
+     return new Promise((resolve) => {
+       const alert = this.alertController.create({
+         header: header,
+         message: message,
+         backdropDismiss: false,
+         buttons: [
+          
+           {
+             text: ok,
+             handler: () => {
+               resolve(true);
+             },
+           },
+           {
+             text: cancel,
+             role: 'cancel',
+             handler: () => {
+               resolve(false);
+             },
+           },
+         ],
+       });
+       alert.then((alert: { present: () => any }) => alert.present());
+     });
+
+
+ }
 
 }

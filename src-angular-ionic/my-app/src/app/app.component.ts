@@ -27,4 +27,13 @@ export class AppComponent implements OnInit {
     },400);
   }
 
+  async logout(){
+    this.apiService.presentAlertConfirm('Logout','Are you sure you want to logout?','logout').then((res:any)=>{
+      if(res){
+         location.href="/admin/logout";
+            }
+          
+        });
+      }
+
 }
