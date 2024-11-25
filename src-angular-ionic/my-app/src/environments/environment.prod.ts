@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  portal_url:'https://localhost:8055'
 };

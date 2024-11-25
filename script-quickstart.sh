@@ -74,6 +74,10 @@ if [ -d "$script_directory/src-angular-ionic" ]; then
     npm i 
     ionic build
     cp -r $script_directory/src-angular-ionic/my-app/www $script_directory/angular-ionic-dist
+    #set base_href="/app/" 
+    sed -i.bak "s|<base href=\"/\">|<base href=\"/app/\">|" "$script_directory/angular-ionic-dist/www/index.html" && rm "$script_directory/angular-ionic-dist/www/index.html.bak"
+    #awk '{gsub("<base href=\"/\">", "<base href=\"/app/\">")}1' "$script_directory/angular-ionic-dist/index.html" > temp && mv temp "$script_directory/angular-ionic-dist/index.html"
+
   fi
 fi
 

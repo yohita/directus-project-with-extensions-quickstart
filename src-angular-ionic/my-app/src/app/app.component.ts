@@ -30,6 +30,8 @@ export class AppComponent implements OnInit {
   async logout(){
     this.apiService.presentAlertConfirm('Logout','Are you sure you want to logout?','logout').then((res:any)=>{
       if(res){
+        //delete the refresh token
+        document.cookie = `directus_refresh_token=; path=/;`;
          location.href="/admin/logout";
             }
           
