@@ -3,11 +3,11 @@
   "description": "Directus project with extensions quickstart",
   "author": {
     "name": "Amit Kulkarni",
-    "url": "https://amit.vc"
+    "url": "https://yohita.com"
   },
-	"version": "11.2.2",
+	"version": "11.3.5",
   "dependencies": {
-    "directus": "11.2.2",
+    "directus": "11.3.5",
     "sqlite3": "^5.1.7"
   }
 }
