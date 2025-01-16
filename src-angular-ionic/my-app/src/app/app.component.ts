@@ -32,7 +32,11 @@ export class AppComponent implements OnInit {
       if(res){
         //delete the refresh token
         document.cookie = `directus_refresh_token=; path=/;`;
+        if(window.parent){
+          window.parent.location.href="/admin/logout";
+        } else {
          location.href="/admin/logout";
+        }
             }
           
         });

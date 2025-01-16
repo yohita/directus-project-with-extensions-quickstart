@@ -10,7 +10,11 @@ export default ({ init, filter, action }) => {
 
 		// Serve static files from the /home route
 		app.use('/app', express.static(path.join(root, 'angular-ionic-dist', 'www')));
+		app.use('/', express.static(path.join(root, 'landing')));
 
+		app.get('/', (req, res, next) => {
+			res.sendFile(path.join(root, 'landing', 'index.html'));
+		});
 		// Custom middleware to handle /home/* routes
 		app.get('/app/*', (req, res, next) => {
 		const ext = path.extname(req.path);
