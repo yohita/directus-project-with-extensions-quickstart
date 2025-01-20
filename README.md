@@ -29,17 +29,17 @@ git clone https://github.com/Yohita/directus-project-with-extensions-quickstart.
 
 2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies using:
 
-cd directus-project-with-extensions-quickstart
-npm install
+- cd directus-project-with-extensions-quickstart
+- npm install
 
 3. Change patth to data.db in .env file to your file path
 
 4. **Start the Development Server**: Start the development server to begin working with Directus:
-bash script-quickstart.sh
+- bash script-quickstart.sh
 
-OR
+- OR
 
-node index.cjs
+- node index.cjs
 
 ## 🚀 Hot Reloading for Directus Extension Development  
 
