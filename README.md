@@ -41,7 +41,7 @@ OR
 
 node index.cjs
 
-## 5. 🚀 Hot Reloading for Directus Extension Development  
+## 🚀 Hot Reloading for Directus Extension Development  
 
 To enable **hot reloading** while developing Directus extensions, follow these steps:  
 
