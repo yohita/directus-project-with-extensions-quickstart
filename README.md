@@ -34,12 +34,22 @@ npm install
 
 3. Change patth to data.db in .env file to your file path
 
-3. **Start the Development Server**: Start the development server to begin working with Directus:
+4. **Start the Development Server**: Start the development server to begin working with Directus:
 bash script-quickstart.sh
 
 OR
 
 node index.cjs
+
+## 5. 🚀 Hot Reloading for Directus Extension Development  
+
+To enable **hot reloading** while developing Directus extensions, follow these steps:  
+
+### **1. Install `nodemon`** (if not already installed)  
+npm install -g nodemon
+
+### **1. Start Development Mode
+npm run dev 
 
 **Thats it !**
 - Server is running on http://localhost:8055

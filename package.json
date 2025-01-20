@@ -6,6 +6,9 @@
     "url": "https://yohita.com"
   },
 	"version": "11.3.5",
+  "scripts": {
+  "dev": "nodemon --watch src-extensions/my-bundle/src --config nodemon.json --exec \"bash script-quickstart.sh\""
+  },
   "dependencies": {
     "directus": "11.3.5",
     "sqlite3": "^5.1.7"
