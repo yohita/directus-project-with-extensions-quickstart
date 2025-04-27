@@ -5,12 +5,12 @@
     "name": "Amit Kulkarni",
     "url": "https://yohita.com"
   },
-	"version": "11.3.5",
+	"version": "11.6.1",
   "scripts": {
-  "dev": "nodemon --watch src-extensions/my-bundle/src --config nodemon.json --exec \"bash script-quickstart.sh\""
+  "dev": "nodemon --watch src-extensions/my-bundle/src --ext js,ts,json,vue --exec \"bash script-quickstart.sh\""
   },
   "dependencies": {
-    "directus": "11.3.5",
+    "directus": "11.6.1",
     "sqlite3": "^5.1.7"
   }
 }
